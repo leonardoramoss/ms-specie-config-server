@@ -3,3 +3,9 @@ server:
 spring:
     application:
         name: ms-specie-config-server
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/leonardoramoss/ms-application-properties
+                    search-paths: '{application}'
